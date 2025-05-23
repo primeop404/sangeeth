@@ -379,3 +379,33 @@ document.getElementById('zoom-overlay').addEventListener('click', function() {
     this.classList.remove('visible');
     document.body.classList.remove('no-scroll');
 });
+
+
+// Category filtering for works section
+const categoryButtons = document.querySelectorAll('.category-btn');
+const workCards = document.querySelectorAll('.work-card');
+
+categoryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons
+    categoryButtons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to clicked button
+    button.classList.add('active');
+    
+    // Get selected category
+    const selectedCategory = button.getAttribute('data-category');
+    
+    // Filter work cards
+    workCards.forEach(card => {
+      if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    
+    // Trigger resize event to fix any layout issues
+    window.dispatchEvent(new Event('resize'));
+  });
+});

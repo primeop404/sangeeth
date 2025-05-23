@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/1a0a3c1f7d.js" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/sangeeth-circle.PNG" type="image/png">
-    <meta property="og:image" content="path/to/your/embed-image.png">
+    <meta property="og:image" content="assets/sangeeth-circle.PNG">
 </head>
 <body>
 
@@ -42,7 +42,7 @@
     <!-- Hero Section -->
     <header id="hero" class="hero">
         <div class="hero-content">
-            <h1>WELCOME TO MY WEBSITE</h1>
+            <h1>WELCOME TO MY PORTFOLIO</h1>
             <p class="subtitle">Hey, I’m <span class="highlight">Sangeeth K Sibu</span> a graphic designer who loves turning ideas into eye-catching visuals. Let’s create something amazing together!</p>
             <a href="#about" class="cta-button" data-sound="click">Get Started</a>
         </div>
@@ -53,7 +53,7 @@
         <div class="about-container">
             <img src="assets/sangeeth-circle.PNG" alt="Graphic Designer" class="about-image">
             <p class="ab-subtitle">
-                I'm a graphic designer currently studying at Keltron Knowledge Center. With a year of experience as a freelancer in various Discord communities, I've worked on projects ranging from logos and banners to intros, etc. Passionate about creativity and always looking to improve my skills!
+                I'm a passionate graphic designer who completed my studies at Keltron Knowledge Centre. For the past 2–3 years, I’ve been working as a freelancer within various Discord communities, helping clients bring their ideas to life through creative design. I specialize in creating logos, banners, posters, and more—each tailored to reflect the client’s unique vision. My journey in graphic design is fueled by a love for creativity, a sharp eye for detail, and a commitment to delivering high-quality, impactful work.
             </p>
         </div>
     </section>
@@ -88,23 +88,44 @@
     <!-- Works Section -->
     <section id="works" class="section">
         <h2 class="section-title">My Works</h2>
+        
+        <!-- Category Navigation -->
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all" data-sound="click">All</button>
+            <button class="category-btn" data-category="logo" data-sound="click">Logo</button>
+            <button class="category-btn" data-category="poster" data-sound="click">Poster</button>
+            <button class="category-btn" data-category="banner" data-sound="click">Banner</button>
+            <button class="category-btn" data-category="mockup" data-sound="click">Mockup</button>
+            <button class="category-btn" data-category="card" data-sound="click">Cards</button>
+        </div>
+        
         <div class="works-grid">
-            <div class="work-card" data-sound="hover"><img src="assets/MB.png" alt="Work 1" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/NPwm.png" alt="Work 2" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/2025.png" alt="Work 3" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/Artboard.png" alt="Work 4" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/BusinessCardsMockup.png" alt="Work 5" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/logo-02.png" alt="Work 6" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/Logo.png" alt="Work 7" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/newyear.png" alt="Work 8" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/poster.png" alt="Work 9" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/Signboard_v02.png" alt="Work 10" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/VALENTINE.png" alt="Work 11" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/watermark.png" alt="Work 12" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/card_back.png" alt="Work 13" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/card2.png" alt="Work 14" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/TP.png" alt="Work 15" class="zoomable"></div>
-            <div class="work-card" data-sound="hover"><img src="assets/goodwills.png" alt="Work 16" class="zoomable"></div>
+            <!-- Logos -->
+            <div class="work-card" data-category="logo" data-sound="hover"><img src="assets/logo-02.png" alt="Logo Design" class="zoomable"></div>
+            <div class="work-card" data-category="logo" data-sound="hover"><img src="assets/Logo.png" alt="Logo Design" class="zoomable"></div>
+            <div class="work-card" data-category="logo" data-sound="hover"><img src="assets/watermark.png" alt="Watermark Design" class="zoomable"></div>
+            <div class="work-card" data-category="logo" data-sound="hover"><img src="assets/goodwills.png" alt="Goodwills Poster" class="zoomable"></div>
+
+            <!-- Posters -->
+            <div class="work-card" data-category="poster" data-sound="hover"><img src="assets/poster.png" alt="Poster Design" class="zoomable"></div>
+            <div class="work-card" data-category="poster" data-sound="hover"><img src="assets/VALENTINE.png" alt="Valentine Poster" class="zoomable"></div>
+            <div class="work-card" data-category="poster" data-sound="hover"><img src="assets/newyear.png" alt="New Year Poster" class="zoomable"></div>
+            <div class="work-card" data-category="poster" data-sound="hover"><img src="assets/2025.png" alt="2025 Poster" class="zoomable"></div>
+            
+            <!-- Banners -->
+            <div class="work-card" data-category="banner" data-sound="hover"><img src="assets/MB.png" alt="Banner Design" class="zoomable"></div>
+            <div class="work-card" data-category="banner" data-sound="hover"><img src="assets/NPwm.png" alt="Banner Design" class="zoomable"></div>
+            <div class="work-card" data-category="banner" data-sound="hover"><img src="assets/Artboard.png" alt="Banner Design" class="zoomable"></div>
+            <div class="work-card" data-category="banner" data-sound="hover"><img src="assets/TP.png" alt="Banner Design" class="zoomable"></div>
+            <div class="work-card" data-category="banner" data-sound="hover"><img src="assets/Work17.png" alt="Banner Design" class="zoomable"></div>
+            
+            <!-- Mockups -->
+            <div class="work-card" data-category="mockup" data-sound="hover"><img src="assets/Signboard_v02.png" alt="Signboard Mockup" class="zoomable"></div>
+            <div class="work-card" data-category="mockup" data-sound="hover"><img src="assets/BusinessCardsMockup.png" alt="Business Card Mockup" class="zoomable"></div>
+            
+            <!-- Cards -->
+            <div class="work-card" data-category="card" data-sound="hover"><img src="assets/card_back.png" alt="Card Design" class="zoomable"></div>
+            <div class="work-card" data-category="card" data-sound="hover"><img src="assets/card2.png" alt="Card Design" class="zoomable"></div>
         </div>
     </section>
 
